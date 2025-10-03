@@ -1,42 +1,68 @@
+/* ===== Body & Layout ===== */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
 }
 
 header {
   background-color: #1E90FF;
   color: white;
-  padding: 15px;
-  text-align: center;
+  padding: 15px 20px;
 }
 
-nav a {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
+  margin-left: 15px;
 }
 
 main {
   padding: 20px;
 }
 
+.search-section {
+  margin-bottom: 20px;
+}
+
 .search-bar {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 12px;
   font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
+/* ===== Grid berita ===== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ===== Card berita ===== */
 .news-card {
-  border: 1px solid #ddd;
+  border-radius: 10px;
   padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 5px;
   color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
 }
 
-/* Warna tiap kelas */
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Warna berdasarkan kelas ===== */
 .news-politik { background-color: #1f77b4; }
 .news-ekonomi { background-color: #ff7f0e; }
 .news-sport { background-color: #2ca02c; }
@@ -44,14 +70,25 @@ main {
 .news-lainnya { background-color: #9467bd; }
 
 .news-card h3 {
-  margin: 0;
+  margin: 0 0 10px;
 }
 
 .news-card small {
   display: block;
   margin-bottom: 10px;
+  font-size: 0.85em;
+  opacity: 0.9;
 }
 
 .news-card p {
-  margin: 5px 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #1E90FF;
+  color: white;
+  margin-top: 20px;
 }

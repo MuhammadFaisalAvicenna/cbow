@@ -9,17 +9,21 @@
 </head>
 <body>
   <header>
-    <h1>📰 Klasifikasi Berita</h1>
-    <nav>
-      <a href="index.html">Home</a>
-    </nav>
+    <div class="header-container">
+      <h1>📰 Klasifikasi Berita</h1>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Daftar Berita & Kelas</h2>
+    <section class="search-section">
       <input type="text" id="search" placeholder="🔍 Cari berita..." class="search-bar">
-      <div id="news-container"></div>
+    </section>
+
+    <section id="news-container" class="news-grid">
+      <!-- Berita akan muncul di sini -->
     </section>
   </main>
 
@@ -28,4 +32,3 @@
   </footer>
 </body>
 </html>
-

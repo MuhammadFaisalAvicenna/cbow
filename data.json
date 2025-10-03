@@ -1,0 +1,14 @@
+[
+  {
+    "judul": "Berita Terkini 1",
+    "tanggal": "2025-09-30",
+    "isi": "Isi berita terkini 1...",
+    "kelas": "Politik"
+  },
+  {
+    "judul": "Berita Terkini 2",
+    "tanggal": "2025-10-01",
+    "isi": "Isi berita terkini 2...",
+    "kelas": "Ekonomi"
+  }
+]

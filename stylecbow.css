@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1E90FF;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.news-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Warna tiap kelas */
+.news-politik { background-color: #1f77b4; }
+.news-ekonomi { background-color: #ff7f0e; }
+.news-sport { background-color: #2ca02c; }
+.news-hiburan { background-color: #d62728; }
+.news-lainnya { background-color: #9467bd; }
+
+.news-card h3 {
+  margin: 0;
+}
+
+.news-card small {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.news-card p {
+  margin: 5px 0;
+}
